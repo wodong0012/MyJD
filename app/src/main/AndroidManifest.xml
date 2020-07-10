@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ye.myjd">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyJDApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/home_jd"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".activity.OrderDetailsActivity"></activity>
+        <activity android:name=".activity.AlipayActivity" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.RegistActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.ProductListActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ProductDetailsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ChooseReceiverActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.SettleActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.AddAddressActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.MyOrderActivity"
+            android:launchMode="singleTop" />
+    </application>
+
+</manifest>
